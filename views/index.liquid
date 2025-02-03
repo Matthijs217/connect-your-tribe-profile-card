@@ -1,14 +1,43 @@
 {% render 'partials/head.liquid' %}
 
 <article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+      
+      <header>
+        
+        <h1>{{ person.name }}</h1>
+        
+        <p><em>Student aan de HVA</em></p>
 
-  <p>{{ person.name }}</p>
+        <button>verander de css</button>
+      
+      </header>
+  
+      <div class="image-container">
+        <img src="/matthijsfoto.JPG" alt="" width="00" height="400">
+      </div>
 
-  <footer></footer>
-</article>
+      <div class="wrapper">
+
+      <div class="item top-left">18 Jaar
+          <span class="extra-text-topleft">ik ben inderdaad 18 jaar</span>
+      </div>
+        <div class="item top-middle">Tennis / Volleybal
+          <span class="extra-text-topmiddle">ik speel tennis en volleyball al een hele lange tijd</span>
+      </div>
+        <div class="item top-right">HAVO
+          <span class="extra-text-topright">ik heb 5 jaar havo gedaan</span>
+      </div>
+        <div class="item bottom-left">Reizen
+          <span class="extra-text-bottomleft">ik heb echt al heel veel gereisd en wil echt nog veel meer zien</span>
+      </div>
+        <div class="item bottom-right">Eigen bedrijf
+          <span class="extra-text-bottomright">ik wil later graag een eigen bedrijf</span>
+      </div>
+
+      </div>
+            
+    </article>
+
+    <script src="scripts/script.js"></script>
 
 {% render 'partials/foot.liquid' %}
