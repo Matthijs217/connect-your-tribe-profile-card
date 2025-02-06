@@ -1,9 +1,11 @@
 {% render 'partials/head.liquid' %}
 
 <main>
-      
+      <details><summary>Data</summary><pre>{{ person | json:4 }}</pre></details>
       <header>
         <h1>{{ person.name }}</h1>  
+        <p>{{ person.birthdate | date: "%d-%m-%Y" }}</p>
+        <p>Mijn haarkleur is {{ person.custom.haarkleur }}</p>
         <button>verander de css</button>
       </header>
   
@@ -30,7 +32,5 @@
       </div>
             
 </main>
-
-    <script src="scripts/script.js"></script>
 
 {% render 'partials/foot.liquid' %}
