@@ -26,10 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 40vw;
+    width: 80vw;
     height: 100%;
-    max-width: 300px;
-    min-width: 60em;
     border-radius: 1rem;
     background: linear-gradient(0deg, rgb(28, 25, 123) 30%, #0bd2ff 100%);
     box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
@@ -90,10 +88,6 @@
 
 
   .wrapper {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     width: 100%;
     border-radius: 10px;
     margin-top: 30px;
@@ -109,7 +103,94 @@
     display: inline-block;
     margin: 1rem;
     font-weight: bold;
-    transform: scale(1.5);
+
+    &.top-left {
+      background-color: white;
+      position: absolute;
+      border-radius: 5px;
+      top: 10%;
+      left: 5%;
+      width: max-content;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:
+        rotate(12deg) 
+        scale(1.4);
+      padding: 1em;
+    }
+
+    &.top-middle {
+      background-color: white;
+      position: absolute;
+      border-radius: 5px;
+      top: 40%;
+      left: 5%;
+      width: max-content;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:
+        rotate(-15deg) 
+        scale(1.4);
+      padding: 1em;
+    }
+
+    &.top-right {
+      background-color: white;
+      position: absolute;
+      padding: 10px;
+      border-radius: 5px;
+      top: 30%;
+      right: 5%;
+      width: max-content;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:
+        rotate(20deg) 
+        scale(1.4);
+      padding: 1em;
+    }
+
+    &.bottom-left {
+      background-color: white;
+      position: absolute;
+      padding: 10px;
+      border-radius: 5px;
+      bottom: 10%;
+      left: 15%;
+      width: max-content;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:
+        rotate(10deg) 
+        scale(1.4);
+      padding: 1em;
+    }
+
+    &.bottom-right {
+      background-color: white;
+      position: absolute;
+      padding: 10px;
+      border-radius: 5px;
+      bottom: 10%;
+      right: 15%;
+      width: max-content;
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:
+        rotate(-5deg) 
+        scale(1.4);
+      padding: 1em;
+    }
   }
 
   .extra-text-topleft,
@@ -132,6 +213,8 @@
     border-radius: 5px;
     z-index: 1;
   }
+
+
 
   .item:hover .extra-text-topleft,
   .item:hover .extra-text-topmiddle,
