@@ -161,7 +161,7 @@
       position: absolute;
       padding: 10px;
       border-radius: 5px;
-      bottom: 10%;
+      bottom: 20%;
       left: 15%;
       width: max-content;
       height: max-content;
@@ -179,8 +179,8 @@
       position: absolute;
       padding: 10px;
       border-radius: 5px;
-      bottom: 10%;
-      right: 15%;
+      bottom: 20%;
+      right: 12%;
       width: max-content;
       height: max-content;
       display: flex;
